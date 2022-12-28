@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+
+			<!-- Google Font Links -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+			<!-- Title -->
+			<title>Interactive Card Details</title>
+
+			<!-- Stylesheet Link -->
+			<link rel="stylesheet" href="Styles.css">
+
+
+			<!-- Javascript File Link -->
+			<script type="text/javascript" src="index.js" defer></script>
+		</head>
+		<body>
+			<div class="main-container">
+				<!-- Images -->
+				<div class="img-container">
+					<img src="images/bg-main-desktop.png" class="desktop-bg" alt="">
+					<div class="cards-img">
+						<div class="frontcard-details">
+							<img src="images/bg-card-front.png" class="front-card" alt="" aria-hidden="true">
+							<img src="images/card-logo.svg" class="card-logo" alt="" aria-hidden="true">
+							<p class="frontcard-number card-details">0000 0000 0000 0000</p>
+							<p class="frontcard-name card-details">Unachukwu Chimamanda</p>
+							<p class="frontcard-date card-details"><span class="card-month">00</span><span>/</span><span class="card-year">00</span></p>
+						</div>
+						<div class="backcard-details">
+							<img src="images/bg-card-back.png" class="back-card" alt="" aria-hidden="true">
+							<p class="backcard-cvc">000</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Form -->
+				<div class="form-container">
+					<form class="form" id="form" onsubmit="return false">
+						<div class="form-top">
+							<div class="form-name">
+								<p class="form-title">CARDHOLDER NAME</p>
+								<input type="text" placeholder="e.g. Unachukwu Chimamanda" class="form-text" id="form-name">
+								<small class="form-error formname-error"></small>
+							</div>
+							<div class="form-number">
+								<p class="form-title">CARD NUMBER</p>
+								<input type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" class="form-text" id="form-number">
+								<small class="formnumber-error form-error"></small>
+							</div>
+						</div>
+						<div class="form-bottom">
+							<div class="form-bottoms">
+								<p class="form-title">EXP. DATE [mm/yy]</p>
+								<input type="text" placeholder="MM" maxlength="2" class="form-date month">
+								<input type="text" placeholder="YY" maxlength="2" class="form-date year">
+								<small class="formdate-error form-error"></small>
+							</div>
+							<div class="form-bottoms">
+								<p class="form-title">CVC</p>
+								<input type="text" maxlength="3" placeholder="e.g. 123" class="form-cvc">
+								<small class="formcvc-error form-error"></small>
+								<button type="submit" class="btn btn-a" onclick="buttonValidation()">Confirm</button>
+							</div>
+						</div>
+					</form>
+					<!-- Thank You Message Container -->
+					<div class="thank-you-div">
+						<img src="images/icon-complete.svg">
+						<h2>Thank you!</h2>
+						<p>We've added your card details</p>
+						<button class="btn btn-b" onclick="continueButton()">Continue</button>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>

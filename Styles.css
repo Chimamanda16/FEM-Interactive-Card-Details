@@ -1,0 +1,210 @@
+body{
+	margin: 0;
+	font-family: "space grotesk", serif;
+}
+
+.back-card, .backcard-cvc, .card-details, .card-logo, .front-card{
+	position: absolute;
+}
+
+.back-card{
+	top: 50%;
+	left: 15%;
+}
+
+.backcard-cvc, .card-details{
+	color: white;
+	z-index: 1;
+}
+
+.backcard-cvc{
+	left: 25em;
+	top: 61%;
+}
+
+.btn{
+	background-color: #21092f;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    height: 55px;
+}
+
+.btn-a{
+    margin-top: 20%;
+    margin-left: -100%;
+    width: 203%;
+}
+
+.btn-b{
+	margin-top: 5%;
+	width: 60%;
+}
+
+.card-details{
+	left: 5%;
+	top: 15%;
+}
+
+.card-logo{
+	left: 6%;
+	top: 18%;
+}
+
+.desktop-bg{
+	position: relative;
+}
+
+.form-bottom{
+	display: flex;
+}
+
+.form-bottoms{
+	width: 35%;
+}
+
+.form-container{
+	margin: 12% 3% 15% 15%;
+	width: 60%;
+}
+
+.form-cvc{
+	width: 100%;
+}
+
+.form-date, .form-text, .form-cvc{
+	border: 1px solid #E8E8E8;
+	border-radius: 6px;
+	font-size: 17px;
+	height: 40px;
+}
+
+.form-date{
+	width: 40%;
+}
+
+.form-error{
+	color: red;
+	display: block;
+}
+
+.form-title{
+	font-size: 13px;
+	letter-spacing: 2px;
+	margin: 40px 0 0 0;
+	width: 102%;
+}
+
+.form-text{
+	width: 70%;
+}
+
+.front-card{
+	left: 5%;
+	margin-bottom: 15%;
+	top: 15%;
+}
+
+.frontcard-date{
+	margin-left: 24rem;
+	top: 37%;
+}
+
+.frontcard-name{
+	margin-left: 4%;
+	top: 37%;
+}
+
+.frontcard-number{
+	font-size: 22px;
+	letter-spacing: 2px;
+	margin-left: 4%;
+	top: 30%;
+}
+
+.img-container{
+    align-items: center;
+	display: flex;
+	flex-wrap: wrap!important;
+	justify-content: center;
+	overflow: visible!important;
+	position: relative;
+	width: 40%;
+}
+
+.main-container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.thank-you-div{
+	text-align: center;
+}
+
+@media (max-width:1000px){
+	.back-card{
+		left: 5%;
+		margin-bottom: 15%;
+		top: -23%;
+	}
+	.backcard-cvc{
+		left: 24rem;
+		top: 15%;
+	}
+	.backcard-details, .frontcard-details{
+		max-width: 200px;
+	}
+	.cards-img{
+		height: 16rem;
+		margin: 0 6% 0 20%;
+		position: absolute;
+	    width: 75%;
+	}
+	.card-logo{
+		left: -3px;
+		top: 51%;
+		z-index: 1;
+	}
+	.desktop-bg{
+		display: none;
+	}
+	.form-container{
+		margin: 20% 5% 15% 16%;
+		width: 82%;
+	}	
+	.front-card{
+		display: flex;
+		justify-content: center;
+		top: 45%;
+		left: -5%;
+		z-index: 1;
+	}
+	.frontcard-date{
+		left: -2rem;
+		top: 114%;
+	}
+	.frontcard-name{
+		margin-left: 0;
+		top: 114%;
+	}
+	.frontcard-number{
+		margin-left: 0;
+		top: 80%;
+	}
+	.img-container{
+		background-image: url("images/bg-main-mobile.png");
+		background-size: cover;
+		height: 40vh;
+		width: 100%;
+	}
+	.main-container{
+		display: block;
+	}
+}
+
+@media (min-width:1500px) and (max-width: 1600px){
+	.desktop-bg{
+		height: 104%;
+	}
+}
